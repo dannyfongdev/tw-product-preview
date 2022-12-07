@@ -11,55 +11,68 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Frontend Mentor | Product preview card component</title>
 
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <!-- Global Container -->
-    <div class="flex items-center justify-center min-h-screen bg-secondary">
-      <!-- Card Container -->
-      <div class="flex flex-col w-[345px] md:flex-row md:w-[600px]">
-        <!-- image div -->
-        <div class="md:w-[300px]">
-          <img
-            src="./images/image-product-mobile.jpg"
-            alt="perfume"
-            class="rounded-t-xl md:hidden"
-          />
-          <img
-          src="./images/image-product-desktop.jpg"
-          alt="perfume"
-          class="hidden rounded-l-xl md:block"
-        />
-        </div>
-        <!-- content div -->
-        <div class="p-5 bg-white rounded-b-xl md:rounded-r-xl md:rounded-l-none md:w-[300px] md:p-[30px]">
-          <h2 class="pb-2 text-[12px] tracking-[0.35em] text-neutral2 md:pb-6">PERFUME</h2>
-          <h1
-            class="font-serif text-[2rem] font-bold leading-8 pb-4 text-neutral1 md:pb-6"
-          >
-            Gabrielle Essence Eau De Parfum
-          </h1>
-          <p class="text-neutral2 text-sm leading-6 pb-5">
-            A floral, solar and voluptuous interpretation composed by Olivier
-            Polge, Perfumer-Creator for the House of CHANEL.
-          </p>
-          <div class="flex flex-row gap-4 items-center pb-2 md:pb-5">
-            <span class="text-[2rem] font-serif text-primary font-bold"
-              >$149.99</span
-            ><span class="line-through text-neutral2">$169.99</span>
+    <main>
+      <!-- Global Container -->
+      <div class="flex items-center justify-center min-h-screen bg-secondary">
+        <!-- Card Container -->
+        <div class="flex flex-col w-[345px] md:flex-row md:w-[600px]">
+          <!-- image div -->
+          <div class="md:w-[300px]">
+            <img
+              src="./images/image-product-mobile.jpg"
+              alt="perfume"
+              class="rounded-t-xl md:hidden"
+            />
+            <img
+              src="./images/image-product-desktop.jpg"
+              alt="perfume"
+              class="hidden rounded-l-xl md:block"
+            />
           </div>
-
+          <!-- content div -->
           <div
-            class="flex items-center justify-center gap-2 font-bold bg-primary p-3 rounded-lg"
+            class="p-5 bg-white rounded-b-xl md:rounded-r-xl md:rounded-l-none md:w-[300px] md:p-[30px]"
           >
-            <img src="./images/icon-cart.svg" alt="shopping cart" />
-            <p class="text-white text-sm">Add to Cart</p>
+            <h2
+              class="pb-2 text-[12px] tracking-[0.35em] text-neutral2 md:pb-6"
+            >
+              PERFUME
+            </h2>
+            <h1
+              class="font-serif text-[2rem] font-bold leading-8 pb-4 text-neutral1 md:pb-6"
+            >
+              Gabrielle Essence Eau De Parfum
+            </h1>
+            <p class="text-neutral2 text-sm leading-6 pb-5">
+              A floral, solar and voluptuous interpretation composed by Olivier
+              Polge, Perfumer-Creator for the House of CHANEL.
+            </p>
+            <div class="flex flex-row gap-4 items-center pb-2 md:pb-5">
+              <span class="text-[2rem] font-serif text-primary font-bold"
+                >$149.99</span
+              ><span class="line-through text-neutral2">$169.99</span>
+            </div>
+
+            <div
+              class="flex items-center justify-center gap-2 font-bold bg-primary p-3 rounded-lg"
+            >
+              <img src="./images/icon-cart.svg" alt="shopping cart" />
+              <p class="text-white text-sm">Add to Cart</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </main>
   </body>
 </html>
